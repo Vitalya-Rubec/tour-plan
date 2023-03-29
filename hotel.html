@@ -8,8 +8,9 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito+Sans:wght@400;700;800display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
 
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
     <title>Hotel</title>
   </head>
   <body>
@@ -91,14 +92,35 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
+
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
           <!-- /.hotel-info_rating  -->
         </div>
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
+              </div>
+              <!-- If we need pagination -->
+              <button class="slider-button slider-button--next"></button>
+              <button class="slider-button slider-button--prev"></button>
+            </div>
+          </div>
+        </div>
       </div>
+
       <!-- /.container -->
     </section>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
